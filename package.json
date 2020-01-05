@@ -1,0 +1,56 @@
+{
+  "name": "vue-invalidation-controller",
+  "version": "0.1.0",
+  "description": "An AbortController-inspired way to force re-evaluation of Vue computed properties",
+  "keywords": [
+    "vue",
+    "invalidate",
+    "computed",
+    "properties",
+    "recompute",
+    "re-evaluate",
+    "controller",
+    "signal"
+  ],
+  "homepage": "https://github.com/Loilo/vue-invalidation-controller#readme",
+  "bugs": {
+    "url": "https://github.com/Loilo/vue-invalidation-controller/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loilo/vue-invalidation-controller.git"
+  },
+  "license": "MIT",
+  "author": "Florian Reuschel <florian@loilo.de>",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/InvalidationController.common.js",
+  "umd:main": "dist/InvalidationController.umd.js",
+  "unpkg": "dist/InvalidationController.umd.js",
+  "module": "dist/InvalidationController.esm.js",
+  "scripts": {
+    "build": "del dist && concurrently \"rollup --config build/rollup.esm.js\" \"rollup --config build/rollup.common.js\" \"rollup --config build/rollup.umd.js\"",
+    "prepublishOnly": "npm test",
+    "pretest": "npm run build",
+    "test": "eslint 'src/*' test.js && jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "concurrently": "^5.0.2",
+    "deepmerge": "^4.2.2",
+    "del-cli": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "github:prettier/eslint-plugin-prettier",
+    "eslint-plugin-unicorn": "^15.0.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "rollup": "^1.28.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.3",
+    "vue": "^2.6.11"
+  },
+  "engines": {
+    "node": ">= 8.6.0"
+  }
+}
