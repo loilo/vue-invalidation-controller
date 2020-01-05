@@ -1,0 +1,8 @@
+plugins:
+  - prettier
+  - unicorn
+parserOptions:
+  ecmaVersion: '2019'
+  sourceType: module
+rules:
+  prettier/prettier: error
