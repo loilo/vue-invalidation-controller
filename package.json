@@ -33,7 +33,7 @@
     "build": "del dist && concurrently \"rollup --config build/rollup.esm.js\" \"rollup --config build/rollup.common.js\" \"rollup --config build/rollup.umd.js\"",
     "prepublishOnly": "npm test",
     "pretest": "npm run build",
-    "test": "eslint 'src/*' test.js && jest"
+    "test": "eslint src/InvalidationController.mjs test.js && jest"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
