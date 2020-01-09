@@ -1,6 +1,6 @@
 {
   "name": "vue-invalidation-controller",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An AbortController-inspired way to force re-evaluation of Vue computed properties",
   "keywords": [
     "vue",
