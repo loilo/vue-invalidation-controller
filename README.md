@@ -48,6 +48,7 @@ new Vue({
     time() {
       // Mark the computed property as invalidatable
       this.controller.useSignal()
+
       return Date.now()
     }
   },
