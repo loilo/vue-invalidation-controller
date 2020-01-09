@@ -70,7 +70,7 @@ new Vue({
 ### Advanced Features
 
 - A controller's `invalidate()` method can be invoked more than once.
-- The same controller instance be used in more than one computed property — and even across multiple components.
+- The same controller instance can be used in more than one computed property — and even across multiple components.
 - The `useSignal()` method works with Vue's built-in [dependency tracking](https://vuejs.org/v2/guide/reactivity.html#How-Changes-Are-Tracked). That's to say that, if needed, you may invoke that method inside of an `if`/`else` branch to conditionally make a computed property invalidatable.
 
 ## Related
