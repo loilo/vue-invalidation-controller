@@ -42,6 +42,8 @@ new Vue({
   el: '#app',
   data: {
     // Instantiate the invalidation controller
+    // Note that the controller instance doesn't *need* to be a reactive property on the
+    // Vue instance. We just put it here because we want to access it in our template.
     controller: new InvalidationController()
   },
   computed: {
