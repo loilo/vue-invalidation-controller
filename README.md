@@ -69,7 +69,7 @@ new Vue({
 2. Call the `useSignal()` method inside a computed property definition to make it invalidatable.
 3. Use the `invalidate()` method to re-evaluate all invalidatable computed properties.
 
-### Advanced Features
+### Advanced Usage
 
 - A controller's `invalidate()` method can be invoked more than once.
 - The same controller instance can be used in more than one computed property — and even across multiple components.
