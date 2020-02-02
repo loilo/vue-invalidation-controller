@@ -84,7 +84,10 @@ new Vue({
 
   const controller = new InvalidationController()
 
-  const now = computed(() => controller.useSignal(), Date.now())
+  const time = computed(() => {
+    controller.useSignal()
+    return Date.now()
+  })
   ```
 
 ## Related
