@@ -9,7 +9,7 @@
 
 # Vue Invalidation Controller
 
-[![Test status on Travis](https://badgen.net/travis/loilo/vue-invalidation-controller)](https://travis-ci.org/loilo/vue-invalidation-controller)
+[![Tests](https://badgen.net/github/checks/loilo/vue-invalidation-controller/master)](https://github.com/loilo/vue-invalidation-controller/actions)
 [![Version on npm](https://badgen.net/npm/v/vue-invalidation-controller)](https://www.npmjs.com/package/vue-invalidation-controller)
 
 The Invalidation Controller is a tiny class (less than 200 bytes gzipped) which enables you to manually force Vue [computed properties](https://vuejs.org/v2/guide/computed.html) to be re-evaluated. Its design is greatly inspired by the web API's [`AbortController`](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
